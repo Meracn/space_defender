@@ -1,6 +1,7 @@
 # Space Defender
 
 A 2D space shooter built with Python and Pygame. Enemies spawn from multiple directions, rocks must be avoided, and a boss fight triggers every three levels.
+## About me
 
 I started learning Python in December 2025 and this is my first larger project I independently developed from start to finish. My original vision included 3D elements, but realizing that requires deeper knowledge I'm still working towards.
 ---
