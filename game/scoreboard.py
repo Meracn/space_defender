@@ -21,7 +21,7 @@ class Scoreboard:
         self.prep_level()
         self.show_lives()
         #pause bg settings
-        self.background = pygame.image.load(Path(__file__).parent/ "images" / "background.bmp").convert_alpha()
+        self.background = pygame.image.load(Path(__file__).parent/ "images" / "background.png").convert_alpha()
         bg_width, bg_height = self.background.get_size()
         scale_factor = self.settings.screen_height / bg_height
         new_bg_width = int((bg_width * scale_factor) +200)

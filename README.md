@@ -2,7 +2,8 @@
 
 A 2D space shooter built with Python and Pygame. Enemies spawn from multiple directions, rocks must be avoided, and a boss fight triggers every three levels.
 
-I started learning Python in December 2025 and this is my first larger project I independently developed from start to finish. My original vision included 3D elements, but realizing that requires deeper knowledge I'm still working towards.
+## About me
+- I started learning Python in December 2025 and this is my first larger project I independently developed from start to finish. My original vision included 3D elements, but realizing that requires deeper knowledge I'm still working towards.
 ---
 
 ## Gameplay
@@ -59,8 +60,8 @@ space_defender/
 
 ```bash
 pip install pygame
-cd space_defender
-python space_defender.py
+cd pip install -r
+requirements.txt
 ```
 
 Requires Python 3.10+ and Pygame 2.x.

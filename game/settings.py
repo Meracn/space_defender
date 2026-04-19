@@ -17,7 +17,7 @@ class Settings:
         self.screen = pygame.display.set_mode((self.screen_width,self.screen_height)) 
         pygame.display.set_caption("Merci, Space Defender")
         #importing a bmp as background
-        self.background = pygame.image.load(Path(__file__).parent/ "images" /"space.bmp").convert_alpha()
+        self.background = pygame.image.load(Path(__file__).parent/ "images" /"space.png").convert_alpha()
         #determine scale of of img as x, y cordinates
         bg_width, bg_height = self.background.get_size()
         #determine scale factor needed to stretch till top

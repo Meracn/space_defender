@@ -5,7 +5,7 @@ from time import sleep
 from settings import Settings
 from ship import Ship
 from fleet import Fleet
-from ammunition import Amunition
+from ammunition import Ammunition
 from scoreboard import Scoreboard
 from menu import Menu
 from key_events import KeyEvents
@@ -36,7 +36,7 @@ class SpaceDefender:
         self.fleet = Fleet(self)
         self.fleet.create_fleet()
         # Munutions klasse
-        self.ammo = Amunition(self)
+        self.ammo = Ammunition(self)
         # Key events klasse
         self.key_events = KeyEvents(self)
         # HUD klasse
