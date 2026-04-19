@@ -1,7 +1,7 @@
 import pygame 
 from bullets import Bullet
 
-class Amunition:
+class Ammunition:
     def __init__(self, sd_game):
         self.sd= sd_game
         self.settings = sd_game.settings
