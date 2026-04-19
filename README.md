@@ -60,8 +60,7 @@ space_defender/
 ## Installation
 
 ```bash
-pip install -r req.txt
-requirements.txt
+pip install -r requirements.txt
 ```
 
 Requires Python 3.10+ and Pygame 2.x.
