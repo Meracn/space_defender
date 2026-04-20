@@ -28,16 +28,15 @@ class Ship:
     def _draw_ship(self):
         w, h = 70, 40
         cx = w // 2
-        #antrieb für ship
 
-        # Dreieck: Spitze oben (Richtung Gegner), Basis unten
+        # Dreieck, körper vom Schiff
         pygame.draw.polygon(self.image, (192, 192, 192), [(cx, 0), (0, h), (w, h)])
         pygame.draw.polygon(self.image, (0, 0, 0), [(cx, 0), (0, h), (w, h)], 2)
 
-          # Cockpit — kleine Ellipse auf der Spitze
+        # Cockpit
         pygame.draw.ellipse(self.image, (0, 180, 220), (cx - 6, 8, 12, 10))
         pygame.draw.ellipse(self.image, (100, 220, 255), (cx - 3, 7, 6, 6))
-
+        # Antrieb 
         for ex in [w // 4, 3 * w // 4]:
             pygame.draw.ellipse(self.image, (255, 140, 0), (ex - 8, h - 5, 16, 10))
             pygame.draw.ellipse(self.image, (255, 220, 80), (ex - 4, h - 3, 8, 6))
