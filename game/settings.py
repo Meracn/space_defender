@@ -5,7 +5,7 @@ class Settings:
 
     def __init__(self):
         
-        """makes music"""
+        # init for music 
         pygame.mixer.init()
         pygame.mixer.music.load(Path(__file__).parent/"sounds"/"music.mp3")
         pygame.mixer.music.set_volume(0.5)
@@ -13,7 +13,7 @@ class Settings:
         #screen settings
         self.screen_width = 1200
         self.screen_height = 600
-        """pygame creates a Screen"""
+        # pygame creates a screen
         self.screen = pygame.display.set_mode((self.screen_width,self.screen_height)) 
         pygame.display.set_caption("Merci, Space Defender")
         #importing a bmp as background
