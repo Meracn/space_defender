@@ -36,7 +36,7 @@ class Fleet:
         self.remaining_spawns = 0
     
     def _spawn_next(self):
-        """Spawnt ein zufälliges Objekt (Alien oder Stein)."""
+        # spawns either rock or enemy
         if random.random() < 0.3:
             self.rocks.add(Rock(self.sd))
         else:
@@ -44,7 +44,7 @@ class Fleet:
         self.remaining_spawns -= 1
 
     def _remove_offscreen(self):
-        """Entfernt Objekte die den Screen verlassen — kein Leben-Verlust."""
+        #removes offscreen objects
         for alien in self.aliens.copy():
             if alien.is_off_screen():
                 self.aliens.remove(alien)
@@ -127,7 +127,7 @@ class Fleet:
         self.create_fleet()
 
     def draw_rocks(self, surface):
-        """Steine separat zeichnen (wegen Rotation)."""
+        #draws rocks 
         for rock in self.rocks.sprites():
             rock.draw(surface)
 
