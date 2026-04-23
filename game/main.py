@@ -90,9 +90,11 @@ class SpaceDefender:
                 elif clicked == "HIGHSCORE":
                     self.show_highscore = True
             
-            #p for entering menu and giving up run
+            #ESC for entering menu and giving up run and exiting hihscore menu
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_p:
+                if self.show_highscore:
+                    self.show_highscore = False
+                elif event.key == pygame.K_ESCAPE:
                     self.stats.reset_stats()
                     self.sb.prep_score()
                     self.sb.prep_level()
