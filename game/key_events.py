@@ -23,11 +23,9 @@ class KeyEvents:
         if event.type ==pygame.KEYDOWN:
             if event.key == pygame.K_q:
                 sys.exit()
-        #pause with ESC
-        if event.key == pygame.K_ESCAPE:
-            if self.sd.show_highscore:
-                self.sd.show_highscore = False
-            elif self.sd.game_active:
+        #pause with p
+        if event.key == pygame.K_p:
+            if self.sd.game_active:
                 self.sd.paused = not self.sd.paused
 
     def _check_keyup_events(self,event):
