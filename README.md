@@ -23,8 +23,8 @@ I started learning Python in December 2025 and this is my first larger project I
 |---|---|
 | Arrow keys | Move ship (4 directions) |
 | Space | Fire |
-| ESC | Pause / close highscore screen |
-| P | Quit to main menu |
+| P | Pause |
+| ESC | Quit to main menu/ close highscore screen |
 | Q | Quit game |
 
 ## Features
