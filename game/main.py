@@ -92,21 +92,22 @@ class SpaceDefender:
             
             #ESC for entering menu and giving up run and exiting hihscore menu
             if event.type == pygame.KEYDOWN:
-                if self.show_highscore:
-                    self.show_highscore = False
-                elif event.key == pygame.K_ESCAPE:
-                    self.stats.reset_stats()
-                    self.sb.prep_score()
-                    self.sb.prep_level()
-                    self.bullet.empty()
-                    self.aliens.empty()
-                    self.fleet.rocks.empty()
-                    self.fleet.boss = None
-                    self.ship.center_ship()
-                    self.ship.invincible = False
-                    self.ship._blink_visible = True
-                    self.game_active = False
-                    pygame.mouse.set_visible(True)
+                if event.key == pygame.K_ESCAPE:
+                    if self.show_highscore:
+                        self.show_highscore = False
+                    elif event.key == pygame.K_ESCAPE:
+                        self.stats.reset_stats()
+                        self.sb.prep_score()
+                        self.sb.prep_level()
+                        self.bullet.empty()
+                        self.aliens.empty()
+                        self.fleet.rocks.empty()
+                        self.fleet.boss = None
+                        self.ship.center_ship()
+                        self.ship.invincible = False
+                        self.ship._blink_visible = True
+                        self.game_active = False
+                        pygame.mouse.set_visible(True)
 
             #movement and other inputs
             if event.type == pygame.KEYDOWN:
